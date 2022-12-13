@@ -1,0 +1,6 @@
+.DS_Store
+*.ipynb
+Outpainting/.ipynb_checkpoints/*
+Outpainting/.DS_Store
+Outpainting/Streamlit/weights.h5
+.env
