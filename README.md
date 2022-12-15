@@ -4,6 +4,7 @@ We designed a Generative Adversial Network for image outpainting as our project 
 ## Setup
 Our code is written in Python 3.10, and we used the Google Console a Vertex AI VM (TensorFlow Enterprise 2.10) with an NVIDIA T4 GPU, 4 vCPUs, and 15 GB of RAM.
 
+
 ## Model Architecture
 In designing this, we used a GAN comprising a Generator and Discriminator. 
 
@@ -25,5 +26,8 @@ Here are some of our results, taken directly from our model!
 ![combine_images](https://user-images.githubusercontent.com/42135459/207445184-bfe18405-a6d5-44f1-b533-cb81aeedb31a.jpg)
 ![combine_images (1)](https://user-images.githubusercontent.com/42135459/207445594-9664b888-baff-46aa-80b2-817d144b970c.jpg)
 ![combine_images](https://user-images.githubusercontent.com/42135459/207447971-4a186d78-e7ae-47fd-b128-aee0b4762b1c.png)
+
+
+This site was built & hosted using [Streamlit](https://streamlit.io/)
 
 
