@@ -14,6 +14,7 @@ The Discriminator identifies real images from the images created by the Generato
 
 ## Model Training
 Using the 
+
 ![Screenshot 2022-12-13 at 21 02 26](https://user-images.githubusercontent.com/42135459/207443050-785caf12-4b7a-4a7c-873c-5e67dc67712a.png)
 
 
@@ -29,6 +30,7 @@ Here are some of our results, taken directly from our model!
 
 
 ## FrontEnd
-`rgb(9, 105, 218)` This site was built & hosted using [Streamlit](https://streamlit.io/)
+
+This site was built & hosted using [Streamlit](https://streamlit.io/)
 
 
