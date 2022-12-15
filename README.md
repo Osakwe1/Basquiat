@@ -13,9 +13,11 @@ The Discriminator identifies real images from the images created by the Generato
 ![Flowchart1 (2)](https://user-images.githubusercontent.com/42135459/207884696-c264280b-83bb-4954-87ca-5bbe242203f3.png)
 
 ## Model Training
-Using the 
-
+Using the designed model architecture and adjusting parameters to improve performance, we produced a model which produced realstic expansions of masked images. Our results through steps of training are shown below:
 ![Screenshot 2022-12-13 at 21 02 26](https://user-images.githubusercontent.com/42135459/207443050-785caf12-4b7a-4a7c-873c-5e67dc67712a.png)
+
+The Ground Truth image for comparison is shown below:
+![00000003](https://user-images.githubusercontent.com/42135459/207891404-c009c99f-fb27-4095-aa1c-ee1424793320.jpg)
 
 
 
