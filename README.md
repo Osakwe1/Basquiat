@@ -29,7 +29,6 @@ Here are some of our results, taken directly from our model!
 
 
 ## FrontEnd
-`rgb(9, 105, 218)`
-This site was built & hosted using [Streamlit](https://streamlit.io/)
+`rgb(9, 105, 218)` This site was built & hosted using [Streamlit](https://streamlit.io/)
 
 
