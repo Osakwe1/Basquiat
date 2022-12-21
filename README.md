@@ -1,4 +1,4 @@
-# Outpainting
+# Basquiat
 We designed a Generative Adversarial Network for **image outpainting** as our project for the Le Wagon Data Science Bootcamp #1050. The primary inspiration for this was the recently introduced Outpainting feature by OpenAI's [DALL-E 2](https://openai.com/dall-e-2/).
 
 ## Introduction
