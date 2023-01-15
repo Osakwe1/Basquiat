@@ -2,7 +2,7 @@
 We designed a Generative Adversarial Network for **image outpainting** as our project for the Le Wagon Data Science Bootcamp #1050. The primary inspiration for this was the recently introduced Outpainting feature by OpenAI's [DALL-E 2](https://openai.com/dall-e-2/).
 
 ## Introduction
-Our code is written in Python 3.10, and we used the Google Console a Vertex AI VM (TensorFlow Enterprise 2.10) with an NVIDIA T4 GPU, 4 vCPUs, and 15 GB of RAM. The training and test set for this project were the [Places365 Dataset](http://places2.csail.mit.edu/) provided by Bolei Zhou.
+Our code is written in Python 3.10, and we used the Google Console Vertex AI VM (TensorFlow Enterprise 2.10) with an NVIDIA T4 GPU, 4 vCPUs, and 15 GB of RAM. The training and test set for this project were the [Places365 Dataset](http://places2.csail.mit.edu/) provided by Bolei Zhou.
 
 ## Model Architecture & Training
 In designing this, we used a Conditional GAN comprising a Generator and Discriminator. The Generator produces outpaintings of masked images it deems to be 'realistic' based on the training set of images it has seen. The Discriminator identifies real images from the images created by the Generator and classifies them accordingly. The Discriminator returns feedback on the images it views as '1's and '0's, which is used to calculate the loss function.  
