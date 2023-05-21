@@ -7,7 +7,6 @@ seaborn
 scikit-learn
 scipy
 streamlit
-sklearn
 tensorflow-macos==2.10.0
 tensorflow==2.10.0
 Pillow
