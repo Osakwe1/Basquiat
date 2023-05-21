@@ -20,7 +20,7 @@ def make_image():
 
         filler = np.full((256,64,3),(255))
 
-        model_path_gen_r = '../Outpainting/Streamlit/weights.h5'
+        model_path_gen_r = '../Streamlit/weights.h5'
         model_uploaded = load_model(model_path_gen=model_path_gen_r)
 
         prediction = model_uploaded(preprocessed_image, training = True)
@@ -63,7 +63,7 @@ def make_image():
         preprocessed_image_left,original_image = preprocess(uploaded_file,expand_side='left')
         preprocessed_image_right,original_image = preprocess(uploaded_file,expand_side='right')
 
-        model_path_gen_r = '../Outpainting/Streamlit/weights.h5'
+        model_path_gen_r = '../Streamlit/weights.h5'
         model_uploaded = load_model(model_path_gen=model_path_gen_r)
 
         prediction_left = model_uploaded(preprocessed_image_left, training = True)
@@ -117,41 +117,41 @@ with st.expander('Check out our sample images', expanded=False):
    # You can call any Streamlit command, including custom components:
         col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("../Outpainting/Images/Places365_val_00000041.jpg")
+        st.image("../Images/Places365_val_00000041.jpg")
         if st.button('1', key='1'):
-            uploaded_file = st.image("../Outpainting/Images/Places365_val_00000041.jpg")
+            uploaded_file = st.image("../Images/Places365_val_00000041.jpg")
         else:
             pass
 
-        st.image("../Outpainting/Images/Places365_val_00000348.jpg")
+        st.image("../Images/Places365_val_00000348.jpg")
         if st.button('2', key='2'):
-            uploaded_file = st.image("../Outpainting/Images/Places365_val_00000348.jpg")
+            uploaded_file = st.image("../Images/Places365_val_00000348.jpg")
         else:
             pass
 
     with col2:
-        st.image("../Outpainting/Images/Places365_val_00000135.jpg")
+        st.image("../Images/Places365_val_00000135.jpg")
         if st.button('3', key='3'):
-            uploaded_file = st.image("../Outpainting/Images/Places365_val_00000135.jpg")
+            uploaded_file = st.image("../Images/Places365_val_00000135.jpg")
         else:
             pass
 
-        st.image("../Outpainting/Images/Places365_val_00000996.jpg")
+        st.image("../Images/Places365_val_00000996.jpg")
         if st.button('4', key='4'):
             uploaded_file = st.image("../Images/Places365_val_00000996.jpg")
         else:
             pass
 
     with col3:
-        st.image("../Outpainting/Images/Places365_val_00000282.jpg")
+        st.image("../Images/Places365_val_00000282.jpg")
         if st.button('5', key='5'):
             uploaded_file = st.image("../Images/Places365_val_00000282.jpg")
         else:
             pass
 
-        st.image("../Outpainting/Images/Places365_val_00000748.jpg")
+        st.image("../Images/Places365_val_00000748.jpg")
         if st.button('6', key='6'):
-            uploaded_file = st.image("../Outpainting/Images/Places365_val_00000748.jpg")
+            uploaded_file = st.image("../Images/Places365_val_00000748.jpg")
         else:
             pass
 temp_uploaded = st.selectbox("Which sample image would you like to see?",(1,2,3,4,5,6))
@@ -159,17 +159,17 @@ option = "both sides"
 option_colours = 100
 if st.button('Generate Outpainted Sample'):
     if temp_uploaded == 1:
-        uploaded_file = "../Outpainting/Images/Places365_val_00000041.jpg"
+        uploaded_file = "../Images/Places365_val_00000041.jpg"
     if temp_uploaded ==2:
-        uploaded_file = "../Outpainting/Images/Places365_val_00000348.jpg"
+        uploaded_file = "../Images/Places365_val_00000348.jpg"
     if temp_uploaded== 3:
-        uploaded_file = "../Outpainting/Images/Places365_val_00000135.jpg"
+        uploaded_file = "../Images/Places365_val_00000135.jpg"
     if temp_uploaded==4:
-        uploaded_file = "../Outpainting/Images/Places365_val_00000996.jpg"
+        uploaded_file = "../Images/Places365_val_00000996.jpg"
     if temp_uploaded==5:
-        uploaded_file = "../Outpainting/Images/Places365_val_00000282.jpg"
+        uploaded_file = "../Images/Places365_val_00000282.jpg"
     if temp_uploaded==6:
-        uploaded_file = "../Outpainting/Images/Places365_val_00000748.jpg"
+        uploaded_file = "../Images/Places365_val_00000748.jpg"
     make_image()
 
 
