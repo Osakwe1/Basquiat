@@ -1,4 +1,4 @@
-from tensorflow.keras import Model, models
+from tensorflow.keras import models
 
 def load_model(model_path_gen):
     """
@@ -6,9 +6,5 @@ def load_model(model_path_gen):
     """
     model_generator = models.load_model(model_path_gen)
     print("\n✅ generator loaded from ComputeEngine")
-
-   # model_discriminator = models.load_model(model_path_dis)
-
-    #print("\n✅ discriminator loaded from ComputeEngine")
 
     return model_generator

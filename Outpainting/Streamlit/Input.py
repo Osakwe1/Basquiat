@@ -52,11 +52,6 @@ def make_image():
         col1, col2, col3 = st.columns([1, 5, 1])
         col2.image('output_image.png', width = 600)
 
-
-
-
-        #update these with compute engine paths
-
         #now we need to do post-processing
 
     elif option == 'both sides':
@@ -83,11 +78,6 @@ def make_image():
         output_ready = Image.fromarray(output_full)
         output_ready.save('output_image.png')
 
-        #col1, col2, col3 = st.columns([1, 5, 1])
-        #col2.image(original_image,width = 400)
-
-        #col1, col2, col3 = st.columns([1, 5, 1])
-        #col2.image('mountain_output.png', width = 500)
         filler = np.full((256,64,3),(255))
         image_input = np.hstack((filler, original_image,filler))
 
@@ -96,9 +86,6 @@ def make_image():
 
         col1, col2, col3 = st.columns([1, 5, 1])
         col2.image('output_image.png', width = 900)
-
-        #st.image(image_input)
-        #st.image('output_image.png')
 
     return True
 
@@ -124,27 +111,27 @@ with st.expander('Check out our sample images', expanded=False):
             pass
 
         st.image("../Images/Places365_val_00000348.jpg")
-        if st.button('2', key='2'):
+        if st.button('4', key='4'):
             uploaded_file = st.image("../Images/Places365_val_00000348.jpg")
         else:
             pass
 
     with col2:
         st.image("../Images/Places365_val_00000135.jpg")
-        if st.button('3', key='3'):
+        if st.button('2', key='2'):
             uploaded_file = st.image("../Images/Places365_val_00000135.jpg")
         else:
             pass
 
         st.image("../Images/Places365_val_00000996.jpg")
-        if st.button('4', key='4'):
+        if st.button('5', key='5'):
             uploaded_file = st.image("../Images/Places365_val_00000996.jpg")
         else:
             pass
 
     with col3:
         st.image("../Images/Places365_val_00000282.jpg")
-        if st.button('5', key='5'):
+        if st.button('3', key='3'):
             uploaded_file = st.image("../Images/Places365_val_00000282.jpg")
         else:
             pass
@@ -160,13 +147,13 @@ option_colours = 100
 if st.button('Generate Outpainted Sample'):
     if temp_uploaded == 1:
         uploaded_file = "../Images/Places365_val_00000041.jpg"
-    if temp_uploaded ==2:
+    if temp_uploaded ==4:
         uploaded_file = "../Images/Places365_val_00000348.jpg"
-    if temp_uploaded== 3:
+    if temp_uploaded==2:
         uploaded_file = "../Images/Places365_val_00000135.jpg"
-    if temp_uploaded==4:
-        uploaded_file = "../Images/Places365_val_00000996.jpg"
     if temp_uploaded==5:
+        uploaded_file = "../Images/Places365_val_00000996.jpg"
+    if temp_uploaded==3:
         uploaded_file = "../Images/Places365_val_00000282.jpg"
     if temp_uploaded==6:
         uploaded_file = "../Images/Places365_val_00000748.jpg"
