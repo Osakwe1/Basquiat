@@ -4,6 +4,59 @@ We designed a Generative Adversarial Network for **image outpainting** as our pr
 ## Introduction
 Our code is written in Python 3.10, and we used the Google Console Vertex AI VM (TensorFlow Enterprise 2.10) with an NVIDIA T4 GPU, 4 vCPUs, and 15 GB of RAM. The training and test set for this project were the [Places365 Dataset](http://places2.csail.mit.edu/) provided by Bolei Zhou.
 
+## Getting Started
+If you need help setting up your copy of the project, click the drop down below. If not, skip ahead.
+
+<details>
+<summary>So how do I set it up?</summary>
+<br>
+These instructions will get you a copy of the project up and running on your local machine for testing and development purposes.
+
+First of all, this project makes use of all the following python libraries and packages:
+
+### Built With
+In working on this project, the following libraries were utilized.
+- Python 🐍 - Programming language
+- Pandas 🐼 - Data manipulation library
+- Numpy 🔢 - Scientific maths library
+- scikit-learn 🗺️ - Machine Learning library
+- Matplotlib 📊 - Data visualization library
+- Seaborn 🌊 - Data visualization library
+- Tensorflow 📈 - Machine Learning and AI library
+- Pillow 🍃 - Image manipulation library
+- Streamlit 📈 - App hosting site
+
+  
+* Clone the project repository to your local machine.
+To set up your own local copy of this project, you will need to 'clone' this repo. To create a clone, run this in your terminal 
+```
+gh repo clone Osakwe1/Basquiat
+```  
+ 
+### Prerequisites
+You will need to have Python 3 and the necessary libraries installed. You can install these libraries using pip by running the below :
+```
+pip install -r requirements.txt 
+```
+- Clone the project repository to your local machine.
+- Open a command prompt or terminal window and navigate to the project directory.
+- If you have VS Code or Jupyter Notebook, you can open up the folder by running:
+```
+code .  # for VS Code
+```  
+OR 
+```
+jupyter notebook  # for Jupyter Notebook
+```  
+If you do have either, I have linked the download link for [VS code](https://code.visualstudio.com/Download)   
+</details>
+Once in the root, you can run the site by running the below: 
+
+```
+streamlit run Outpainting/Streamlit/Input.py
+```
+
+
 ## Model Architecture & Training
 In designing this, we used a Conditional GAN comprising a Generator and Discriminator. The Generator produces outpaintings of masked images it deems to be 'realistic' based on the training set of images it has seen. The Discriminator identifies real images from the images created by the Generator and classifies them accordingly. The Discriminator returns feedback on the images it views as '1's and '0's, which is used to calculate the loss function.  
 Using backpropagation, the model weights are then adjusted by calculating the weight's impact on the output. The training process is shown in detail below:
