@@ -7,8 +7,8 @@ seaborn
 scikit-learn
 scipy
 streamlit
-tensorflow-macos==2.10.0
-tensorflow==2.10.0
+tensorflow-macos
+tensorflow
 Pillow
 
 # API
