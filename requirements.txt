@@ -8,9 +8,8 @@ scikit-learn
 scipy
 streamlit
 sklearn
-tensorflow-macos==2.10.0; sys_platform == 'darwin' and 'ARM' in platform_version # Mac M-chips
-tensorflow==2.10.0; sys_platform == 'darwin' and 'ARM' not in platform_version # Mac Intel chips
-tensorflow==2.10.0; sys_platform != 'darwin' # Windows & Ubuntu Intel chips
+tensorflow-macos==2.10.0
+tensorflow==2.10.0
 Pillow
 
 # API
